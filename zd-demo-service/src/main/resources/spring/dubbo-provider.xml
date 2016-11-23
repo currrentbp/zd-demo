@@ -15,4 +15,5 @@
 
 	<dubbo:service ref="testServiceImpl" interface="com.gege.service.ITestService"
 		group="${dubbo.gege.group}" version="${dubbo.gege.version}" />
+	<bean parent="org.springframework.web.servlet.DispatcherServlet"></bean>
 </beans>
