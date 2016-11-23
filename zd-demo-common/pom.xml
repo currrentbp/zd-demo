@@ -8,12 +8,15 @@
 		<artifactId>zd-demo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
 	<groupId>com.bp</groupId>
 	<artifactId>zd-demo-common</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>zd-demo-common Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -27,6 +30,13 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.2.8</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.9</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>zd-demo-common</finalName>

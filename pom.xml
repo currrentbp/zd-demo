@@ -10,8 +10,22 @@
 		<module>zd-demo-api</module>
 		<module>zd-demo-service</module>
 		<module>zd-demo-common</module>
+		<module>zd-demo-controller</module>
 	</modules>
 
 
-	
+
+	<dependencies>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.4.10</version>
+			<!-- <exclusions>
+				<exclusion>
+					<artifactId>spring</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+			</exclusions> -->
+		</dependency>
+	</dependencies>
 </project>
