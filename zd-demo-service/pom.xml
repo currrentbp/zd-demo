@@ -18,7 +18,7 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<springversion>3.1.4.RELEASE</springversion>
+		<springversion>4.3.4.RELEASE</springversion>
 	</properties>
 
 	<dependencies>
@@ -34,7 +34,8 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-asm</artifactId>
-			<version>${springversion}</version>
+			<version>3.1.4.RELEASE</version>
+			<!-- <version>${springversion}</version> -->
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -182,68 +183,15 @@
 			<artifactId>zkclient</artifactId>
 			<version>0.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.5.2-alpha</version>
+		</dependency>
 
 	</dependencies>
 
 	<build>
 		<finalName>zd-demo-service</finalName>
-
-		<resources>
-			<resource>
-				<!-- 静态资源文件扫描地址 -->
-				<directory>${project.basedir}/src/main/resources</directory>
-				<includes>
-					<include>*.*</include>
-				</includes>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
 	</build>
-
-
-	<profiles>
-		<profile>
-			<id>local</id>
-			<properties>
-				<!-- 这是zookeeper的地址，要根据实际情况进行配置，默认zookeeper://10.75.226.3:3126 -->
-				<dubbo.gege.address>zookeeper:/10.75.226.3:3126</dubbo.gege.address>
-				<!--dubbo暴露的端口配置 -->
-				<dubbo.gege.port>29014</dubbo.gege.port>
-				<!--工程的服务集合，${user.name}表示当前PC的UserName -->
-				<dubbo.gege.group>${user.name}</dubbo.gege.group>
-				<!--dubbo服务版本号 -->
-				<dubbo.gege.version>1.0.0</dubbo.gege.version>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-		</profile>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<dubbo.gege.address>zookeeper://10.75.226.3:3126</dubbo.gege.address>
-				<dubbo.gege.port>29014</dubbo.gege.port>
-				<dubbo.gege.group>${user.name}</dubbo.gege.group>
-				<dubbo.gege.version>1.0.0</dubbo.gege.version>
-			</properties>
-		</profile>
-		<profile>
-			<id>test</id>
-			<properties>
-				<dubbo.gege.address>zookeeper://10.75.226.3:3126</dubbo.gege.address>
-				<dubbo.gege.port>29014</dubbo.gege.port>
-				<dubbo.gege.group>${user.name}</dubbo.gege.group>
-				<dubbo.gege.version>1.0.0</dubbo.gege.version>
-			</properties>
-		</profile>
-		<profile>
-			<id>product</id>
-			<properties>
-				<dubbo.gege.address>zookeeper://10.75.226.3:3126</dubbo.gege.address>
-				<dubbo.gege.port>29014</dubbo.gege.port>
-				<dubbo.gege.group>${user.name}</dubbo.gege.group>
-				<dubbo.gege.version>1.0.0</dubbo.gege.version>
-			</properties>
-		</profile>
-	</profiles>
 </project>

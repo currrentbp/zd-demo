@@ -1,5 +1,6 @@
 package com.bp.entity;
 
+import java.io.Serializable;
 
 /**
  * 
@@ -7,8 +8,9 @@ package com.bp.entity;
  * @createTime 20161120
  *
  */
-public class Student {
+public class Student implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String name;
 	private String address;

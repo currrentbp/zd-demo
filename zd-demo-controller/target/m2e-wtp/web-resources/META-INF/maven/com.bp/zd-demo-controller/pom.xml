@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-asm</artifactId>
-			<version>${springversion}</version>
+			<version>3.1.4.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -162,9 +162,37 @@
 			<artifactId>zd-demo-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.bp</groupId>
+			<artifactId>zd-demo-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 		
-		
+		<!-- dubbo配置 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.4.10</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- zookeeper配置 -->
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.5.2-alpha</version>
+		</dependency>
 	</dependencies>
 	
 	
