@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans  
-        http://www.springframework.org/schema/beans/spring-beans.xsd  
-        http://code.alibabatech.com/schema/dubbo  
-        http://code.alibabatech.com/schema/dubbo/dubbo.xsd  
-        ">
-	<!-- consumer application name -->
-	<dubbo:application name="consumer-of-helloworld-app" />
-	<!-- registry address, used for consumer to discover services -->
-	<dubbo:registry address="zookeeper://10.75.226.3:2181" />
-	<dubbo:consumer timeout="5000" />
-	<!-- which service to consume? -->
-	<dubbo:reference id="demoService"
-		interface="com.bp.service.DemoService" />
-		
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<import resource="consumer.xml" />
+	<import resource="spring-controller.xml" />
+	
+	
+	
 </beans>
