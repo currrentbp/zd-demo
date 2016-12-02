@@ -5,10 +5,10 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd  
         http://code.alibabatech.com/schema/dubbo  
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd  ">
-
+<!-- 
 	<dubbo:application name="consumer-of-helloworld-app" />
 	<dubbo:registry address="zookeeper://10.75.227.168:2181" />
 	<dubbo:consumer timeout="5000" />
-	<dubbo:reference id="demoService" interface="com.bp.service.DemoService" />
+	<dubbo:reference id="demoService" interface="com.bp.service.DemoService" /> -->
 	
 </beans>

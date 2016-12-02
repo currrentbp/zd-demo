@@ -9,8 +9,8 @@ import com.bp.entity.Student;
  *
  */
 public interface DemoService {
+
 	
 	public Integer save(Student student);
 	public Integer delete(Student student);
-
 }

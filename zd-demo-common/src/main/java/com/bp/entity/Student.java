@@ -1,15 +1,11 @@
 package com.bp.entity;
-
-import java.io.Serializable;
-
 /**
  * 
  * @author current_bp
  * @createTime 20161120
  *
  */
-public class Student implements Serializable{
-	
+public class Student {
 	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String name;
@@ -39,8 +35,4 @@ public class Student implements Serializable{
 	public void setCourse(Integer course) {
 		this.course = course;
 	}
-	
-	
-	
-
 }
