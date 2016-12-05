@@ -8,11 +8,11 @@
 	<modules>
 		<module>zd-demo-service</module>
 		<module>zd-demo-controller</module>
-		<module>zd-demo-api</module>
-    <module>zd-demo-common</module>
+		<module>zd-demo-common</module>
+    <module>zd-demo-dao</module>
   </modules>
 
 
 
-	
+
 </project>

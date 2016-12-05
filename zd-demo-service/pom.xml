@@ -162,12 +162,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>com.bp</groupId>
-			<artifactId>zd-demo-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
 		<!-- dubbo配置 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -192,5 +186,13 @@
 			<artifactId>zookeeper</artifactId>
 			<version>3.5.2-alpha</version>
 		</dependency>
+		
+		
+		<dependency>
+			<groupId>com.bp</groupId>
+			<artifactId>zd-demo-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 	</dependencies>
 </project>
