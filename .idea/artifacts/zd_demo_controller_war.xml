@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zd-demo-controller:war">
+    <output-path>$PROJECT_DIR$/zd-demo-controller/target</output-path>
+    <root id="archive" name="zd-demo-controller.war">
+      <element id="artifact" artifact-name="zd-demo-controller:war exploded" />
+    </root>
+  </artifact>
+</component>

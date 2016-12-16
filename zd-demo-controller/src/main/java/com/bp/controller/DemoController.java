@@ -1,7 +1,5 @@
 package com.bp.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,7 +28,7 @@ public class DemoController {
 
 	@RequestMapping(value = "useDemo", method = RequestMethod.GET)
 	@ResponseBody
-	public String list(String name, HttpServletRequest request) {
+	public String list(String name) {
 		System.out.println("===>name:"+name);
 		demoService.save(new Student(1L,name));
 		return name;
